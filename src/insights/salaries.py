@@ -1,22 +1,22 @@
 from typing import Union, List, Dict
 
+from src.insights.jobs import read
+
+# Line above only for pytest tests...
+# from jobs import read
+
 
 def get_max_salary(path: str) -> int:
-    """Get the maximum salary of all jobs
+    jobs = read(path)
+    salaries = set()
 
-    Must call `read`
+    for job in jobs:
+        if job["max_salary"].isnumeric():
+            salaries.add(int(job["max_salary"]))
 
-    Parameters
-    ----------
-    path : str
-        Must be passed to `read`
+    max_salary = max(salaries)
 
-    Returns
-    -------
-    int
-        The maximum salary paid out of all job opportunities
-    """
-    raise NotImplementedError
+    return max_salary
 
 
 def get_min_salary(path: str) -> int:
@@ -64,8 +64,7 @@ def matches_salary_range(job: Dict, salary: Union[int, str]) -> bool:
 
 
 def filter_by_salary_range(
-    jobs: List[dict],
-    salary: Union[str, int]
+    jobs: List[dict], salary: Union[str, int]
 ) -> List[Dict]:
     """Filters a list of jobs by salary range
 
@@ -82,3 +81,6 @@ def filter_by_salary_range(
         Jobs whose salary range contains `salary`
     """
     raise NotImplementedError
+
+
+get_max_salary("data/jobs.csv")

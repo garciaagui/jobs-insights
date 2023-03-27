@@ -7,29 +7,37 @@ from src.insights.jobs import read
 
 
 def get_max_salary(path: str) -> int:
-    jobs = read(path)
-    salaries = set()
+    try:
+        jobs = read(path)
+        salaries = set()
 
-    for job in jobs:
-        if job["max_salary"].isnumeric():
-            salaries.add(int(job["max_salary"]))
+        for job in jobs:
+            if job["max_salary"].isnumeric():
+                salaries.add(int(job["max_salary"]))
 
-    max_salary = max(salaries)
+        max_salary = max(salaries)
 
-    return max_salary
+        return max_salary
+
+    except TypeError:
+        print("Operação não concluída, verifique se o caminho é válido")
 
 
 def get_min_salary(path: str) -> int:
-    jobs = read(path)
-    salaries = set()
+    try:
+        jobs = read(path)
+        salaries = set()
 
-    for job in jobs:
-        if job["min_salary"].isnumeric():
-            salaries.add(int(job["min_salary"]))
+        for job in jobs:
+            if job["min_salary"].isnumeric():
+                salaries.add(int(job["min_salary"]))
 
-    min_salary = min(salaries)
+        min_salary = min(salaries)
 
-    return min_salary
+        return min_salary
+
+    except TypeError:
+        print("Operação não concluída, verifique se o caminho é válido")
 
 
 def matches_salary_range(job: Dict, salary: Union[int, str]) -> bool:
@@ -38,7 +46,7 @@ def matches_salary_range(job: Dict, salary: Union[int, str]) -> bool:
         max_salary = int(job["max_salary"])
 
         if min_salary > max_salary:
-            raise ValueError
+            raise ValueError("Valor máximo deve ser maior que o mínimo")
 
         elif min_salary <= int(salary) <= max_salary:
             return True
@@ -47,7 +55,7 @@ def matches_salary_range(job: Dict, salary: Union[int, str]) -> bool:
             return False
 
     except (Exception):
-        raise ValueError
+        raise ValueError("Verifique se os parâmetros estão corretos")
 
 
 def filter_by_salary_range(

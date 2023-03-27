@@ -17,7 +17,7 @@ def get_unique_industries(path: str) -> List[str]:
 
         return list(unique_industries)
 
-    except FileNotFoundError:
+    except TypeError:
         print("Operação não concluída, verifique se o caminho é válido")
 
 

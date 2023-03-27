@@ -7,21 +7,29 @@ from src.insights.jobs import read
 
 
 def get_unique_industries(path: str) -> List[str]:
-    jobs = read(path)
-    unique_industries = set()
+    try:
+        jobs = read(path)
+        unique_industries = set()
 
-    for job in jobs:
-        if len(job["industry"]):
-            unique_industries.add(job["industry"])
+        for job in jobs:
+            if len(job["industry"]):
+                unique_industries.add(job["industry"])
 
-    return list(unique_industries)
+        return list(unique_industries)
+
+    except FileNotFoundError:
+        print("Arquivo não encontrado")
 
 
 def filter_by_industry(jobs: List[Dict], industry: str) -> List[Dict]:
-    filtered_jobs = list()
+    try:
+        filtered_jobs = list()
 
-    for job in jobs:
-        if job["industry"] == industry:
-            filtered_jobs.append(job)
+        for job in jobs:
+            if job["industry"] == industry:
+                filtered_jobs.append(job)
 
-    return filtered_jobs
+        return filtered_jobs
+
+    except TypeError:
+        print("Lista e/ou indústria inválida(s)")

@@ -18,7 +18,7 @@ def get_unique_industries(path: str) -> List[str]:
         return list(unique_industries)
 
     except FileNotFoundError:
-        print("Arquivo não encontrado")
+        print("Operação não concluída, verifique se o caminho é válido")
 
 
 def filter_by_industry(jobs: List[Dict], industry: str) -> List[Dict]:

@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 
-<h1 align="center">Projeto Job Insights 💼💡</h1>
+<h1 align="center">Projeto Job Insights 📊</h1>
 
 <details>
   <summary>Sumário</summary><br />
@@ -19,7 +19,15 @@
 
 Projeto **29** do curso de Desenvolvimento Web da [Trybe][trybe-site-url].
 
-<!-- DESCRIÇÃO DO PROJETO -->
+O Job Insights é uma aplicação desenvolvida em [Python][python-url] direcionada a análises de dados reais de empregos. Sua implementação foi incorporada a um aplicativo web desenvolvido com [Flask][flask-url], permitindo que a pessoa usuária possa realizar consultas e utilizar diferentes filtros para resultados mais acurados.
+
+Os dados foram extraídos do site [Glassdoor][glassdor-site-url] e obtidos através do [Kaggle][kaggle-site-url].
+
+> ℹ️ Todo aplicativo web em Flask foi desenvolvido e disponibilizado pela Trybe. Fui responsável somente pela implementação da rota `/job/<index>`.
+
+> ℹ️ As funções implementadas por mim estão em `src/insights`.
+
+> ℹ️ Escrevi testes para funções implementadas pela Trybe. Tais testes podem ser encontrados nos diretórios `brazilian`, `counter` e `sorting` de `tests`.
 
 <br/>
 
@@ -39,6 +47,7 @@ O projeto foi desenvolvido em [Python][python-url]. As implementações foram in
   <li>Filtrar os dados de acordo com o setor das empresas.</li>
   <li>Filtrar os dados de acordo com o salário anual.</li>
   <li>Controlar a quantidade de linhas que aparecem a cada consulta.</li>
+  <li>Acessar páginas específicas de cada trabalho, as quais exibem todas as informações relacionadas a cada trabalho.</li>
 </ul>
 
 <br/>
@@ -133,6 +142,7 @@ python3 -m src.insights.jobs
   <li>Escrever funções.</li>
   <li>Escrever testes com Pytest.</li>
   <li>Escrever módulos e importá-los em outros códigos.</li>
+  <li>Implementação de páginas em Flask.</li>
 </ul>
 
 <br/>
@@ -159,6 +169,8 @@ Projeto desenvolvido por Guilherme Garcia. Seguem abaixo minhas redes sociais e 
 <!-- MARKDOWN LINKS & IMAGES -->
 
 [trybe-site-url]: https://www.betrybe.com/
+[glassdor-site-url]: https://www.glassdoor.com.br/index.htm
+[kaggle-site-url]: https://www.kaggle.com/datasets/atharvap329/glassdoor-data-science-job-data
 [flake8-url]: https://flake8.pycqa.org/en/latest/
 [flake8-badge]: https://img.shields.io/badge/Flake8-000000?style=for-the-badge&logo=flake8&logoColor=white
 [flask-url]: https://flask.palletsprojects.com/en/2.2.x/

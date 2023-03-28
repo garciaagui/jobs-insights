@@ -9,7 +9,6 @@
     <li><a href="#tecnologias">Tecnologias</a></li>
     <li><a href="#funcionalidades">Funcionalidades</a></li>
     <li><a href="#como-executar-o-projeto">Como Executar o Projeto</a></li>
-    <li><a href="#endpoints">Endpoints</a></li>
     <li><a href="#habilidades">Habilidades</a></li>
     <li><a href="#sobre-a-trybe">Sobre a Trybe</a></li>
     <li><a href="#contato">Contato</a></li>
@@ -34,20 +33,92 @@ O projeto foi desenvolvido em [Python][python-url]. As implementações foram in
 
 ## Funcionalidades
 
-<!-- <ul>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-</ul> -->
+<ul>
+  <li>Acessar um conjunto de dados sobre empregos.</li>
+  <li>Filtrar os dados de acordo com o tipo de trabalho (Ex.: temporário, estágio...).</li>
+  <li>Filtrar os dados de acordo com o setor das empresas.</li>
+  <li>Filtrar os dados de acordo com o salário anual.</li>
+  <li>Controlar a quantidade de linhas que aparecem a cada consulta.</li>
+</ul>
 
 <br/>
 
 ## Como Executar o Projeto
 
-<!-- PASSO A PASSO -->
+Para rodar o projeto localmente, siga os passos abaixo.
+
+1. Clone o repositório.
+
+```
+git clone git@github.com:garciaagui/trybe-project-29_jobs-insights.git
+```
+
+2. Navegue até a raiz do projeto.
+
+```
+cd trybe-project-29_jobs-insights/
+```
+
+3. Crie o ambiente virtual.
+
+```
+python3 -m venv .venv
+```
+
+4. Ative o ambiente virtual.
+
+```
+source .venv/bin/activate
+```
+
+- Note que no começo da linha do terminal haverá `(.venv)`, como no exemplo abaixo.
+
+```
+(.venv) gui@gui-desktop:~/Trybe/projetos-trybe-personal/trybe-project-29_jobs-insights$
+```
+
+- Para desativar o ambiente virtual, execute o comando `deactivate`. Lembre-se de ativá-lo novamente quando retornar ao projeto.
+
+5. Instale as dependências no ambiente virtual.
+
+```
+python3 -m pip install -r dev-requirements.txt
+```
+
+6. Inicialize a aplicação flask com o comando abaixo e acesse `http://localhost:5000` em seu navegador.
+
+```
+flask run
+```
+
+<details>
+  <summary><strong> ℹ️ Para instruções adicionais, clique aqui.</strong></summary><br />
+
+- 🧪 Para rodar **todos** os testes, execute o comando abaixo.
+
+```
+python3 -m pytest
+```
+
+- 🧪 Para rodar apenas um arquivo de teste, siga o exemplo abaixo.
+
+```
+python3 -m pytest tests/nomedoarquivo.py
+```
+
+- 🧪 Para rodar apenas um teste específico, siga o exemplo abaixo.
+
+```
+python3 -m pytest -k nome_da_func_de_tests
+```
+
+- Caso deseje fazer testes manuais diretamente nos módulos onde as funções foram implementadas, siga o exemplo abaixo.
+
+```
+python3 -m src.insights.jobs
+```
+
+</details>
 
 <br/>
 

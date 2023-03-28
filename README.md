@@ -33,9 +33,9 @@ Os dados foram extraídos do site [Glassdoor][glassdor-site-url] e obtidos atrav
 
 ## Tecnologias
 
-O projeto foi desenvolvido em [Python][python-url]. As implementações foram incorporadas a um aplicativo web desenvolvido com o framework [Flask][flask-url]. Os testes foram escritos com [Pytest][pytest-url] e a qualidade de código foi garantida com o linter [Flake8][flake8-url].
+O projeto foi desenvolvido em [Python][python-url]. As implementações foram incorporadas a um aplicativo web desenvolvido com o framework [Flask][flask-url] e templates [Jinja][jinja-url]. Os testes foram escritos com [Pytest][pytest-url] e a qualidade de código foi garantida com o linter [Flake8][flake8-url].
 
-[![Python][python-badge]][python-url] [![Flask][flask-badge]][flask-url] [![Pytest][pytest-badge]][pytest-url] [![Flake8][flake8-badge]][flake8-url]
+[![Python][python-badge]][python-url] [![Flask][flask-badge]][flask-url] [![Jinja][jinja-badge]][jinja-url] [![Pytest][pytest-badge]][pytest-url] [![Flake8][flake8-badge]][flake8-url]
 
 <br/>
 
@@ -175,6 +175,8 @@ Projeto desenvolvido por Guilherme Garcia. Seguem abaixo minhas redes sociais e 
 [flake8-badge]: https://img.shields.io/badge/Flake8-000000?style=for-the-badge&logo=flake8&logoColor=white
 [flask-url]: https://flask.palletsprojects.com/en/2.2.x/
 [flask-badge]: https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white
+[jinja-url]: https://jinja.palletsprojects.com/en/3.1.x/
+[jinja-badge]: https://img.shields.io/badge/Jinja-B41717?style=for-the-badge&logo=jinja&logoColor=white
 [pytest-url]: https://docs.pytest.org/en/7.2.x/
 [pytest-badge]: https://img.shields.io/badge/-Pytest-0A9EDC?logo=pytest&logoColor=white&style=for-the-badge
 [python-url]: https://www.python.org/

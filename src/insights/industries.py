@@ -2,9 +2,6 @@ from typing import List, Dict
 
 from src.insights.jobs import read
 
-# Line above only for pytest tests...
-# from jobs import read
-
 
 def get_unique_industries(path: str) -> List[str]:
     try:

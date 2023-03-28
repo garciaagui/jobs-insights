@@ -2,9 +2,6 @@ from typing import Union, List, Dict
 
 from src.insights.jobs import read
 
-# Line above only for pytest tests...
-# from jobs import read
-
 
 def get_max_salary(path: str) -> int:
     try:

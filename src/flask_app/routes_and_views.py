@@ -28,7 +28,7 @@ bp = Blueprint("client", __name__, template_folder="templates")
 
 @bp.route("/.images/job.png")
 def flask_image():
-    return send_file("../../.images/job.png", mimetype="image/png")
+    return send_file("images/job.png", mimetype="image/png")
 
 
 @bp.route("/")

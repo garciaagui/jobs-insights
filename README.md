@@ -148,7 +148,7 @@ Project developed by **Guilherme Garcia**. Below are my social networks and mean
 [![GitHub][github-badge]][github-url]
 [![Instagram][instagram-badge]][instagram-url]
 
-<p align="right"><a href="#readme-top">Voltar ao topo</a></p>
+<p align="right"><a href="#readme-top">Back to top</a></p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 

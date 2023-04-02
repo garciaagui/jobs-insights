@@ -1,127 +1,127 @@
 <a name="readme-top"></a>
 
-<h1 align="center">Projeto Job Insights 📊</h1>
+<h1 align="center">Job Insights 📊</h1>
 
-<details>
-  <summary>Sumário</summary><br />
-  <ol>
-    <li><a href="#sobre-o-projeto">Sobre o Projeto</a></li>
-    <li><a href="#tecnologias">Tecnologias</a></li>
-    <li><a href="#funcionalidades">Funcionalidades</a></li>
-    <li><a href="#como-executar-o-projeto">Como Executar o Projeto</a></li>
-    <li><a href="#habilidades">Habilidades</a></li>
-    <li><a href="#sobre-a-trybe">Sobre a Trybe</a></li>
-    <li><a href="#contato">Contato</a></li>
-  </ol>
-</details>
+> [🇧🇷 Clique aqui para acessar a versão em português.](README_pt-br.md)
 
-## Sobre o Projeto
+## Summary
 
-Projeto **29** do curso de Desenvolvimento Web da [Trybe][trybe-site-url].
+<ol>
+  <li><a href="#description">Description</a></li>
+  <li><a href="#technologies">Technologies</a></li>
+  <li><a href="#features">Features</a></li>
+  <li><a href="#how-to-run">How to Run</a></li>
+  <li><a href="#about-trybe">About Trybe</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ol>
 
-O Job Insights é uma aplicação desenvolvida em [Python][python-url] direcionada a análises de dados reais de empregos. Sua implementação foi incorporada a um aplicativo web desenvolvido com [Flask][flask-url], permitindo que a pessoa usuária possa realizar consultas e utilizar diferentes filtros para resultados mais acurados.
+## Description
 
-Os dados foram extraídos do site [Glassdoor][glassdor-site-url] e obtidos através do [Kaggle][kaggle-site-url].
+**29th project** of the [Trybe][trybe-site-url] Web Development course.
 
-> ℹ️ Todo aplicativo web em Flask foi desenvolvido e disponibilizado pela Trybe. Fui responsável somente pela implementação da rota `/job/<index>`.
+Job Insights is an application developed in [Python][python-url] aimed at analyzing real job data. Its implementation was incorporated into a web application developed with [Flask][flask-url], allowing the user to make queries and use different filters for more accurate results.
 
-> ℹ️ As funções implementadas por mim estão em `src/insights`.
+The data was extracted from the [Glassdoor][glassdor-site-url] website and obtained through [Kaggle][kaggle-site-url].
 
-> ℹ️ Escrevi testes para funções implementadas pela Trybe. Tais testes podem ser encontrados nos diretórios `brazilian`, `counter` e `sorting` de `tests`.
+> ℹ️ The entire Flask web application was developed and provided by Trybe. Of all the routes, I implemented only `/job/<index>`.
+
+> ℹ️ The functions implemented by me are in `src/insights`.
+
+> ℹ️ I wrote tests for the functions implemented by Trybe. These tests can be found in the `brazilian`, `counter`, and `sorting` subdirectories of `tests`.
 
 <br/>
 
-## Tecnologias
+## Technologies
 
-O projeto foi desenvolvido em [Python][python-url]. As implementações foram incorporadas a um aplicativo web desenvolvido com o framework [Flask][flask-url] e templates [Jinja][jinja-url]. Os testes foram escritos com [Pytest][pytest-url] e a qualidade de código foi garantida com o linter [Flake8][flake8-url].
+The project was developed in [Python][python-url]. The implementations were incorporated into a web application developed using the [Flask][flask-url] framework and [Jinja][jinja-url] templates. The tests were written using [Pytest][pytest-url], and code quality was ensured using the [Flake8][flake8-url] linter.
 
 [![Python][python-badge]][python-url] [![Flask][flask-badge]][flask-url] [![Jinja][jinja-badge]][jinja-url] [![Pytest][pytest-badge]][pytest-url] [![Flake8][flake8-badge]][flake8-url]
 
 <br/>
 
-## Funcionalidades
+## Features
 
 <ul>
-  <li>Acessar um conjunto de dados sobre empregos.</li>
-  <li>Filtrar os dados de acordo com o tipo de trabalho (Ex.: temporário, estágio...).</li>
-  <li>Filtrar os dados de acordo com o setor das empresas.</li>
-  <li>Filtrar os dados de acordo com o salário anual.</li>
-  <li>Controlar a quantidade de linhas que aparecem a cada consulta.</li>
-  <li>Acessar páginas específicas de cada trabalho, as quais exibem todas as informações relacionadas a cada trabalho.</li>
+  <li>Access a set of job-related data.</li>
+  <li>Filter the data according to the job type (e.g. temporary, internship...).</li>
+  <li>Filter the data according to the industry sector.</li>
+  <li>Filter the data according to the annual salary.</li>
+  <li>Control the number of rows displayed in each query.</li>
+  <li>Access specific pages for each job, which display all the information related to that job.</li>
 </ul>
 
 <br/>
 
-## Como Executar o Projeto
+## How to Run
 
-Para rodar o projeto localmente, siga os passos abaixo.
+To run the project locally, follow the steps below.
 
-1. Clone o repositório.
-
-```
-git clone git@github.com:garciaagui/trybe-project-29_jobs-insights.git
-```
-
-2. Navegue até a raiz do projeto.
+1. Clone the repository.
 
 ```
-cd trybe-project-29_jobs-insights/
+git clone git@github.com:garciaagui/jobs-insights.git
 ```
 
-3. Crie o ambiente virtual.
+2. Navigate to the root of the project.
+
+```
+cd jobs-insights/
+```
+
+3. Create the virtual environment.
 
 ```
 python3 -m venv .venv
 ```
 
-4. Ative o ambiente virtual.
+4. Activate the virtual environment.
 
 ```
 source .venv/bin/activate
 ```
 
-- Note que no começo da linha do terminal haverá `(.venv)`, como no exemplo abaixo.
+- Note that at the beginning of the terminal line there will be `(.venv)`, as in the example below.
 
 ```
-(.venv) gui@gui-desktop:~/Trybe/projetos-trybe-personal/trybe-project-29_jobs-insights$
+(.venv) gui@gui-desktop:~/Trybe/jobs-insights$
 ```
 
-- Para desativar o ambiente virtual, execute o comando `deactivate`. Lembre-se de ativá-lo novamente quando retornar ao projeto.
+- To deactivate the virtual environment, run the command `deactivate`. Remember to activate it again when you return to the project.
 
-5. Instale as dependências no ambiente virtual.
+5. Install dependencies in the virtual environment.
 
 ```
 python3 -m pip install -r dev-requirements.txt
 ```
 
-6. Inicialize a aplicação flask com o comando abaixo e acesse `http://localhost:5000` em seu navegador.
+6. Initialize the Flask application with the command below and access `http://localhost:5000` in your browser.
 
 ```
 flask run
 ```
 
 <details>
-  <summary><strong> ℹ️ Para instruções adicionais, clique aqui.</strong></summary><br />
+  <summary><strong> ℹ️ For additional instructions, click here.</strong></summary><br />
 
-- 🧪 Para rodar **todos** os testes, execute o comando abaixo.
+- 🧪 To run **all** tests, execute the command below.
 
 ```
 python3 -m pytest
 ```
 
-- 🧪 Para rodar apenas um arquivo de teste, siga o exemplo abaixo.
+- 🧪 To run only one test file, follow the example below.
 
 ```
-python3 -m pytest tests/nomedoarquivo.py
+python3 -m pytest tests/sorting/test_sorting.py
 ```
 
-- 🧪 Para rodar apenas um teste específico, siga o exemplo abaixo.
+- 🧪 To run only one specific test, follow the example below.
 
 ```
-python3 -m pytest -k nome_da_func_de_tests
+python3 -m pytest -k test_sort_by_max_salary_criteria
 ```
 
-- Caso deseje fazer testes manuais diretamente nos módulos onde as funções foram implementadas, siga o exemplo abaixo.
+- If you wish to manually test directly in the modules where the functions were implemented, follow the example below.
 
 ```
 python3 -m src.insights.jobs
@@ -131,33 +131,17 @@ python3 -m src.insights.jobs
 
 <br/>
 
-## Habilidades
+## About Trybe
 
-<ul>
-  <li>Utilizar o terminal interativo do Python.</li>
-  <li>Utilizar estruturas condicionais e de repetição.</li>
-  <li>Utilizar funções built-in do Python.</li>
-  <li>Utilizar tratamento de exceções.</li>
-  <li>Realizar a manipulação de arquivos.</li>
-  <li>Escrever funções.</li>
-  <li>Escrever testes com Pytest.</li>
-  <li>Escrever módulos e importá-los em outros códigos.</li>
-  <li>Implementação de páginas em Flask.</li>
-</ul>
+_"[Trybe][trybe-site-url] is a future school for anyone who wants to improve their lives and build a successful career in technology, where the person only pays when they get a good job."_
+
+_"The program features over 1,500 hours of online classes covering introduction to software development, front-end, back-end, computer science, software engineering, agile methodologies, and behavioral skills."_
 
 <br/>
 
-## Sobre a Trybe
+## Contact
 
-_"A [Trybe][trybe-site-url] é uma escola do futuro para qualquer pessoa que queira melhorar de vida e construir uma carreira de sucesso em tecnologia, onde a pessoa só paga quando conseguir um bom trabalho."_
-
-_"O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias ágeis e habilidades comportamentais._"
-
-<br/>
-
-## Contato
-
-Projeto desenvolvido por Guilherme Garcia. Seguem abaixo minhas redes sociais e meios de contato. 🤘
+Project developed by **Guilherme Garcia**. Below are my social networks and means of contact. 🤘
 
 [![Gmail][gmail-badge]][gmail-url]
 [![Linkedin][linkedin-badge]][linkedin-url]

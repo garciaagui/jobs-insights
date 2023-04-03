@@ -29,6 +29,8 @@ Os dados foram extraídos do site [Glassdoor][glassdor-site-url] e obtidos atrav
 
 > ℹ️ Escrevi testes para funções implementadas pela Trybe. Tais testes podem ser encontrados nos subdiretórios `brazilian`, `counter` e `sorting` de `tests`.
 
+[![Project Jobs Insights][project-demo]]
+
 <br/>
 
 ## Tecnologias
@@ -152,9 +154,13 @@ Projeto desenvolvido por **Guilherme Garcia**. Seguem abaixo minhas redes sociai
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
+[project-demo]: ./project-demo.gif
 [trybe-site-url]: https://www.betrybe.com/
 [glassdor-site-url]: https://www.glassdoor.com.br/index.htm
 [kaggle-site-url]: https://www.kaggle.com/datasets/atharvap329/glassdoor-data-science-job-data
+
+<!-- STACKS -->
+
 [flake8-url]: https://flake8.pycqa.org/en/latest/
 [flake8-badge]: https://img.shields.io/badge/Flake8-000000?style=for-the-badge&logo=flake8&logoColor=white
 [flask-url]: https://flask.palletsprojects.com/en/2.2.x/
@@ -165,6 +171,9 @@ Projeto desenvolvido por **Guilherme Garcia**. Seguem abaixo minhas redes sociai
 [pytest-badge]: https://img.shields.io/badge/-Pytest-0A9EDC?logo=pytest&logoColor=white&style=for-the-badge
 [python-url]: https://www.python.org/
 [python-badge]: https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white
+
+<!-- CONTACT -->
+
 [gmail-badge]: https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white
 [gmail-url]: mailto:garciaguig@gmail.com
 [linkedin-badge]: https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white

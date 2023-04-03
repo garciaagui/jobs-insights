@@ -29,7 +29,7 @@ Os dados foram extraídos do site [Glassdoor][glassdor-site-url] e obtidos atrav
 
 > ℹ️ Escrevi testes para funções implementadas pela Trybe. Tais testes podem ser encontrados nos subdiretórios `brazilian`, `counter` e `sorting` de `tests`.
 
-[![Project Jobs Insights][project-demo]]
+![Project Jobs Insights][project-demo]
 
 <br/>
 
